@@ -1,0 +1,85 @@
+.f-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.f-formGroups {
+  width: 500px;
+  border: 1px solid #00000060;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em,
+    rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+    rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+  padding: 5px;
+}
+
+.f-title {
+  text-align: center;
+  margin: 20px 0 40px 0;
+}
+
+.f-formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.f-label {
+  margin-bottom: 5px;
+}
+
+.f-input {
+  height: 40px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #00000060;
+  padding: 5px;
+}
+
+.f-btn {
+  padding: 10px 15px;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.5s;
+  background-color: crimson;
+  box-shadow: 0 0 4px crimson;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+}
+
+.f-btn:hover {
+  background-color: #fff;
+  color: #000;
+  letter-spacing: 1.3px;
+  box-shadow: 0 0 4px #000;
+}
+
+.f-formOther {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.f-formOther a {
+  font-size: 12px;
+  color: #000;
+  position: relative;
+}
+
+.f-formOther a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.f-formOther a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}

@@ -1,0 +1,22 @@
+.blog-title {
+  text-align: center;
+}
+
+.hb-blogs.blog {
+  columns: unset;
+  column-gap: unset;
+}
+
+.blog-desc {
+  margin: 50px 0;
+  text-align: center;
+  color: #111;
+}
+
+.hb-blogFooter.blog {
+  margin-bottom: 40px;
+}
+
+/* .hb-conatiner.blog {
+  margin-bottom: 50px;
+} */

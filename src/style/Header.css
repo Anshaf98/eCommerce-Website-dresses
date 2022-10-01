@@ -1,0 +1,114 @@
+.header {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  min-height: 100px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header-col:first-child {
+  display: flex;
+  align-items: center;
+  flex: 3;
+}
+
+.header-col:last-child {
+  flex: 1;
+}
+
+.header-logo {
+  flex: 1;
+}
+
+.header-logo .logo {
+  font-size: 30px;
+  color: #000;
+  font-weight: bold;
+  font-family: "Monoton", cursive;
+}
+
+.header-logo .logo span {
+  color: crimson;
+  font-weight: lighter;
+}
+
+.menu-item,
+.menu-anotherItem {
+  display: flex;
+}
+
+.header-menu {
+  flex: 2;
+}
+
+.menu-item li {
+  margin-right: 20px;
+}
+
+.menu-anotherItem {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.menu-anotherItem li {
+  margin-left: 30px;
+}
+
+.menu-item li a,
+.menu-anotherItem li a {
+  position: relative;
+  color: #000;
+}
+
+.menu-item li a::after,
+.menu-anotherItem li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.menu-item li a:hover::after,
+.menu-anotherItem li a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.menu-div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+  /* align-items: flex-end; */
+}
+
+/* .menu-div svg {
+  color: crimson;
+} */
+
+.menu-badge {
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}

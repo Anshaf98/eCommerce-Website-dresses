@@ -1,0 +1,51 @@
+.footer {
+  margin-top: 80px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.f-row {
+  display: flex;
+}
+
+.f-row:first-child {
+  margin-bottom: 35px;
+}
+
+.f-col {
+  flex: 1;
+  text-align: center;
+}
+
+.f-col a {
+  position: relative;
+  font-size: 20px;
+  color: #000;
+}
+
+.f-col a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  right: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.5s cubic-bezier(0, 0, 0.44, 1.1);
+}
+
+.f-col a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.f-copyright {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.f-copyright span {
+  font-size: 12px;
+}

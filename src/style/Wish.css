@@ -1,0 +1,27 @@
+.w-container {
+  padding: 80px 0;
+}
+
+.w-groups {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.w-btnTrash {
+  background: transparent;
+  display: block;
+  border: none;
+  margin: 15px auto 5px auto;
+}
+
+.w-trash {
+  color: crimson;
+}
+
+.w-trash:hover {
+  color: #000;
+}

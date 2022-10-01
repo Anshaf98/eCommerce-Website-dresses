@@ -1,0 +1,118 @@
+.s-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.s-row:last-child {
+  display: flex;
+}
+
+.s-col:first-child {
+  flex: 1;
+}
+
+.s-col:last-child {
+  flex: 3;
+}
+
+/* shop filter ============================================== */
+
+.f-group {
+  margin-top: 50px;
+}
+
+.f-groupTitle {
+  font-size: 14px;
+  /* margin-bottom: 10px; */
+}
+
+.f-filterDiv {
+  margin-top: 15px;
+}
+
+.f-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.f-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  box-shadow: 0 0 4px #000;
+  padding: 5px 15px;
+  transition: all 0.5s;
+}
+
+.f-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.f-filterInput {
+  height: 30px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #000;
+  width: 100%;
+  padding: 0 10px 5px 10px;
+}
+
+.f-checkbox {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #ccc;
+}
+
+.f-check {
+  cursor: pointer;
+  filter: invert(0%) sepia(7%) saturate(0%) hue-rotate(81deg) brightness(102%)
+    contrast(107%);
+  width: 20px;
+  height: 20px;
+}
+
+.f-filterLabel {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* price ======================================= */
+
+.rc-slider-handle {
+  border-color: #000 !important;
+}
+
+.rc-slider-track {
+  background-color: #000 !important;
+}
+
+.rc-slider-dot-active {
+  border-color: #000 !important;
+}
+
+.rc-slider-handle-dragging.rc-slider-handle-dragging.rc-slider-handle-dragging {
+  box-shadow: 0 0 0 2px #000 !important;
+}
+
+/* star ========================================= */
+
+.f-button.star {
+  font-size: 15px;
+}
+
+/* shopproduct ================================= */
+
+.sp-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+.s-container {
+  padding: 80px 0;
+}
